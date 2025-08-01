@@ -1,0 +1,9 @@
+<resources>
+    <string name="default_web_client_id" translatable="false">Your_default_web_client_id</string>
+    <string name="firebase_database_url" translatable="false">your_database_url</string>
+    <string name="gcm_defaultSenderId" translatable="false">1024572345589</string>
+    <string name="google_api_key" translatable="false">AIzaSyBfrBA4zw_4p35nJScC5_m5Jym-UZutSls</string>
+    <string name="google_app_id" translatable="false">1:1024572345589:android:d2b925bba162ae393249bc</string>
+    <string name="google_crash_reporting_api_key" translatable="false">your_crash_reporting_api_key</string>
+    <string name="project_id" translatable="false">flash-chat-d498f</string>
+</resources>

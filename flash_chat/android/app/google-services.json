@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1024572345589",
+    "project_id": "flash-chat-d498f",
+    "storage_bucket": "flash-chat-d498f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1024572345589:android:d2b925bba162ae393249bc",
+        "android_client_info": {
+          "package_name": "com.dosuroseline.flash_chat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBfrBA4zw_4p35nJScC5_m5Jym-UZutSls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

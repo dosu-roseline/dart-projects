@@ -1,0 +1,104 @@
+import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
+const bottomContainerHeight = 80.0;
+const activeCardColour = Color(0xFF1D1E33);
+const bottomContainerColour = Color(0xFFEB1555);
+
+class InputPage extends StatefulWidget {
+  const InputPage({super.key});
+
+  @override
+  State<InputPage> createState() => _InputPageState();
+}
+
+class _InputPageState extends State<InputPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('BMI Calculator'),
+      ),
+      body: Column(
+        children: [
+          const Expanded(
+            child: Row(
+              children: [
+                Expanded(
+                    child: ResuableCard(
+                  colour: activeCardColour,
+                  cardChild: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Icon(
+                        FontAwesomeIcons.mars,
+                        size: 80.0,
+                      ),
+                      SizedBox(
+                        height: 15.0,
+                      ),
+                      Text(
+                        'MALE',
+                        style: TextStyle(
+                          fontSize: 18.0,
+                          color: Color(0xFF8D8E98),
+                        ),
+                      ),
+                    ],
+                  ),
+                )),
+                Expanded(
+                    child: ResuableCard(
+                  colour: activeCardColour,
+                )),
+              ],
+            ),
+          ),
+          const Expanded(
+              child: ResuableCard(
+            colour: activeCardColour,
+          )),
+          const Expanded(
+            child: Row(
+              children: [
+                Expanded(
+                    child: ResuableCard(
+                  colour: activeCardColour,
+                )),
+                Expanded(
+                    child: ResuableCard(
+                  colour: activeCardColour,
+                )),
+              ],
+            ),
+          ),
+          Container(
+            color: bottomContainerColour,
+            margin: const EdgeInsets.only(top: 10.0),
+            width: double.infinity,
+            height: bottomContainerHeight,
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class ResuableCard extends StatelessWidget {
+  const ResuableCard({super.key, required this.colour, this.cardChild});
+
+  final Color colour;
+  final Widget? cardChild;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.all(15.0),
+      decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(10.0),
+        color: colour,
+      ),
+      child: cardChild,
+    );
+  }
+}
